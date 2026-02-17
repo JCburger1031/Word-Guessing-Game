@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justin Rivero Word Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Word Guessing Game</h1>
+      <label for="difficulty">Select Difficulty:</label>
+      <select id="difficulty" class="style-select">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <button id="start-btn" class="style-button">Start Game</button>
+      <button id="restart-btn">Restart</button>
+      <div id="game-area" class="hidden"> 
+        <p id="word-display">_ _ _ _ _</p>
+        <input type="text" id="guess-input" maxlength="1" placeholder="Enter a letter" />
+        <button id="guess-btn" class="style-button">Guess</button>
+        <p id="message"></p>
+        <p id="wrong-guesses">Wrong guesses: </p> 
+        <p id="hint"></p>
+
+        
+
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+  
+</html>
